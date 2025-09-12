@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO 007</title>
+</head>
+<body>
+    <h1>Imagem flexível</h1>
+    <p>
+        Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar melhor a experiência🤯
+    </p>
+
+    <picture>
+        <source media="(min-width: 1250px)" srcset="_imagens/paisagem-g.png" type="image/png">
+        <source media="(min-width: 800px)" srcset="_imagens/paisagem-m.png" type="image/png">
+
+        <img src="_imagens/paisagem-p.png" alt="Imagem Flexível">
+    </picture>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIALOG</title>
+    <style>
+        body {
+            font: normal 1rem Arial;
+        }
+
+        button {
+            padding: 8px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, .5);
+            background-color: transparent;
+            transition: transform .5s ease;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .popup::backdrop {
+            background-color: rgba(0, 0, 0, .5);
+            backdrop-filter: blur(5px);
+        }
+
+        h2 img {
+            width: 50px;
+        }
+
+        .popup {
+            width: 400px;
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, .5);
+        }
+
+        .conteudo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>TESTE COM DIALOG</h1>
+    <button class="open-popup">Logar</button>
+
+    <dialog class="popup">
+        <div class="conteudo">
+            <h2>
+                <img src="check.png">
+            </h2>
+            <p>
+                Login bem sucedido
+            </p>
+        </div>
+        <div class="div-btn"><button class="close-popup">OK</button></div>
+    </dialog>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
