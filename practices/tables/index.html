@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLES</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        body {
+            height: 99vh;
+            font-family: "Poppins", sans-serif;
+            background: #fff url('./images/football.jpg') center center no-repeat fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+        .conteiner {
+            width: 800px;
+            padding: 20px;
+            color: #fff;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, .5);
+            text-align: center;
+            overflow-x: auto;
+        }
+
+        .conteiner h1 {
+            font-variant: small-caps;
+        }
+
+        table {
+            width: 600px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        .odd {
+            background-color: rgb(0, 204, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Liga Nacional de Futebol</h1>
+        <table>
+            <colgroup>
+                <col class="odd">
+                <col class="even">
+                <col class="odd">
+                <col class="even">
+                <col class="odd">
+                <col class="even">
+                <col class="odd">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Jogos</th>
+                    <th scope="col">Victórias</th>
+                    <th scope="col">Empates</th>
+                    <th scope="col">Derrotas</th>
+                    <th scope="col">Pontos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1º</td>
+                    <td>Leões</td>
+                    <td>10</td>
+                    <td>8</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>2º</td>
+                    <td>Tigres</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>3º</td>
+                    <td>Chitas</td>
+                    <td>12</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="7">Total de times: 6 | Última actualização: 23/09/2025</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
