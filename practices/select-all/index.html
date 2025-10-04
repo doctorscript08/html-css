@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT ALL</title>
+</head>
+<body>
+    <input type="checkbox" name="seleccionar" class="seleccionar">
+    <label for="">Selecciona-me</label><br>
+    <input type="checkbox" name="seleccionar" class="seleccionar">
+    <label for="">Selecciona-me</label><br>
+    <input type="checkbox" name="seleccionar" class="seleccionar">
+    <label for="">Selecciona-me</label><br>
+    <input type="checkbox" name="seleccionar" class="seleccionar">
+    <label for="">Selecciona-me</label><br>
+    <input type="checkbox" name="seleccionar" class="seleccionar">
+    <label for="">Selecciona-me</label><br>
+    <input type="checkbox" name="seleccionar" class="seleccionar">
+    <label for="">Selecciona-me</label><br>
+    <input type="checkbox" name="seleccionar" class="seleccionar">
+    <label for="">Selecciona-me</label><br>
+    <input type="checkbox" name="seleccionar" class="seleccionar">
+    <label for="">Selecciona-me</label><br>
+    <input type="checkbox" name="seleccionar" class="seleccionar">
+    <label for="">Selecciona-me</label><br>
+    <input type="checkbox" name="seleccionar" class="seleccionar">
+    <label for="">Selecciona-me</label><br><br>
+
+    <input type="checkbox" name="seleccionar-todos" id="seleccionar-todos">
+    <label for="seleccionar-todos">Seleccionar todos</label>
+
+    <script>
+        const checkboxes = document.querySelectorAll(".seleccionar")
+
+        document.querySelector("#seleccionar-todos").addEventListener("input", function() {
+            checkboxes.forEach(element => {
+                element.checked = this.checked
+            });
+        })
+    </script>
+</body>
+</html>
